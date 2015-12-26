@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Student.h"
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+{
+    Student *stdObj;
+}
 
 @end
 
